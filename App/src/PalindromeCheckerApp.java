@@ -10,20 +10,19 @@ public class PalindromeCheckerApp {
         System.out.println("Is Palindrome? : " + result);
     }
 
-    // Recursive method
+  
     private static boolean isPalindrome(String str, int start, int end) {
 
-        // Base condition
+      
         if (start >= end) {
             return true;
         }
 
-        // If characters are not equal
         if (str.charAt(start) != str.charAt(end)) {
             return false;
         }
 
-        // Recursive call
+      
         return isPalindrome(str, start + 1, end - 1);
     }
 }
