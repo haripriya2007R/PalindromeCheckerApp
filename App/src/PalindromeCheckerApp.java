@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class PalindromeCheckerApp {
+public class UseCase13PalindromeCheckerApp {
 
-
+  
     public static boolean isPalindromeReverse(String input) {
         String reversed = new StringBuilder(input).reverse().toString();
         return input.equalsIgnoreCase(reversed);
     }
 
-
+ 
     public static boolean isPalindromeTwoPointer(String input) {
         int left = 0;
         int right = input.length() - 1;
@@ -30,7 +30,7 @@ public class PalindromeCheckerApp {
         System.out.print("Input : ");
         String input = scanner.nextLine();
 
-
+        
         long startTime = System.nanoTime();
 
         boolean result = isPalindromeTwoPointer(input);
