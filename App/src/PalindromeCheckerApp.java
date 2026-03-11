@@ -2,13 +2,27 @@ public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        String input = "madam";
+        String input = "A man a plan a canal panama";
 
-        boolean result = isPalindrome(input, 0, input.length() - 1);
+        String normalized = input.replaceAll("\\s+", "").toLowerCase();
+
+        boolean isPalindrome = true;
+
+ UC10
+        int i = 0;
+        int j = normalized.length() - 1;
+
+        while (i < j) {
+            if (normalized.charAt(i) != normalized.charAt(j)) {
+                isPalindrome = false;
+                break;
+            }
+            i++;
+            j--;
+        }
 
         System.out.println("Input : " + input);
-        System.out.println("Is Palindrome? : " + result);
-    }
+        System.out.println("Is Palindrome? : " + isPalindrome);
 
   
     private static boolean isPalindrome(String str, int start, int end) {
@@ -24,5 +38,6 @@ public class PalindromeCheckerApp {
 
       
         return isPalindrome(str, start + 1, end - 1);
+      main
     }
 }
