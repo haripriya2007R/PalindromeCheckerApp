@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UseCase13PalindromeCheckerApp {
+public class PalindromeCheckerApp {
 
   
     public static boolean isPalindromeReverse(String input) {
