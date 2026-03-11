@@ -8,6 +8,7 @@ public class PalindromeCheckerApp {
 
         boolean isPalindrome = true;
 
+ UC10
         int i = 0;
         int j = normalized.length() - 1;
 
@@ -22,5 +23,21 @@ public class PalindromeCheckerApp {
 
         System.out.println("Input : " + input);
         System.out.println("Is Palindrome? : " + isPalindrome);
+
+  
+    private static boolean isPalindrome(String str, int start, int end) {
+
+      
+        if (start >= end) {
+            return true;
+        }
+
+        if (str.charAt(start) != str.charAt(end)) {
+            return false;
+        }
+
+      
+        return isPalindrome(str, start + 1, end - 1);
+      main
     }
 }
