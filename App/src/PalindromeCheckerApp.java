@@ -12,9 +12,8 @@ public class PalindromeCheckerApp {
         System.out.print("Input : ");
         String input = scanner.nextLine();
 
-        // Inject strategy directly (no user choice)
         PalindromeStrategy strategy = new StackStrategy();
-        // You could also use: new DequeStrategy();
+    
 
         boolean result = strategy.checkPalindrome(input);
 
