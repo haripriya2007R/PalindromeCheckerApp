@@ -11,7 +11,12 @@ public class PalindromeCheckerApp {
 
         PalindromeService service = new PalindromeService();
 
+ UC11
         boolean result = service.checkPalindrome(input);
+
+        
+        String normalized = input.replaceAll("\\s+", "").toLowerCase();
+main
 
         System.out.println("Is Palindrome? : " + result);
 
